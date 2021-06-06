@@ -1,6 +1,6 @@
 # URL Pages
 
-[jstrieb.github.io/urlpages](http://jstrieb.github.io/urlpages)
+This was a fork of [jstrieb.github.io/urlpages](http://jstrieb.github.io/urlpages). I will develop it to an advanced stage.
 
 ## About
 
@@ -18,14 +18,11 @@
 - No commitment
 - A few hundred total lines of clear, well-documented HTML, CSS, and JavaScript
 
-Read the Hacker News Discussion
-[here](https://news.ycombinator.com/item?id=20317840)
-
 
 ## Encrypt
 
-It is now possible to encrypt URL Pages using [Link
-Lock](https://github.com/jstrieb/link-lock). This static, distributed web
+It is now possible to encrypt URL Pages using Link
+Lock. This static, distributed web
 application uses AES in the browser to encrypt the URL without transmitting any
 data. The encrypted link is then stored in a Link Lock URL, which, when
 visited, can only be unlocked with a password.
@@ -60,7 +57,7 @@ JSON string before being base 64 encoded.
 
 The obvious downside of URL Pages is that the links get very long very quickly.
 Luckily, some URL shorteners are able to accommodate fairly long URLs (shoutout
-to [TinyUrl](http://tinyurl.com)). In a strange way, this effectively means the
+to [da.gd](http://da.gd)). In a strange way, this effectively means the
 link shortener is acting as the web host since it is responsible for storing
 the record of the web page's data. For simple web pages (and even simple page
 hierarchies), URL Pages have proven reasonably easy and effective to use,
@@ -100,91 +97,3 @@ version that I ended up using fairly frequently for sharing quick
 HTML/CSS/JavaScript experiments (never as a means of seriously publishing and
 sharing censorship-proof content). I found that if its use is limited to that
 case, it is actually very handy and robust!
-
-
-## Examples
-
-The following examples were made and "published" using the provided [code
-editor](http://jstrieb.github.io/urlpages/editor).
-
-- My personal website
-    - Code in the code editor [here](https://tinyurl.com/y64dmsqm)
-    - "Published" version [here](https://tinyurl.com/y5w9ybk2)
-- Bookmarklet setup page
-    - Code in the code editor [here](https://tinyurl.com/y5r8y4v4)
-    - "Published" version [here](https://tinyurl.com/y3lw36uh)
-- A page with embedded images (no external image host)
-    - Code in the code editor
-      [here](http://jstrieb.github.io/urlpages/examples/embed-code.html)
-    - "Published" page
-      [here](http://jstrieb.github.io/urlpages/examples/embed-page.html)
-
-The following examples were cloned from existing pages using the bookmarklet.
-
-- My dad's food blog
-  [here](http://jstrieb.github.io/urlpages/examples/food-blog.html)
-- The entire [editor](http://jstrieb.github.io/urlpages/editor) encoded in the
-  URL [here](https://tinyurl.com/y6nx5347)
-- This GitHub project page
-  [here](http://jstrieb.github.io/urlpages/examples/project-page.html)
-- A cloned New York Times Article
-  [here](http://jstrieb.github.io/urlpages/examples/nyt.html)
-
-
-## Bookmarklet
-
-Currently, the bookmarklet is very much in-development (read: mostly doesn't
-work). Feel free to try it anyway by visiting the link below and following the
-instructions.
-- [Bookmarklet instruction page](https://tinyurl.com/y3lw36uh)
-
-Code for the bookmarklet can be found in
-[`bookmarklet.js`](https://github.com/jstrieb/urlpages/blob/master/bookmarklet.js).
-
-The bookmarklet enables some of the most interesting and promising
-opportunities for URL Pages. Namely: cloning pages for archival purposes,
-sharing restricted information to bypass censorship, bypassing paywalls,
-storing entire pages in bookmarks, etc.
-
-
-## Related Projects
-
-Since its original creation, it has been forked many times. Please open an
-issue if you would like me to link back to a fork or mirror.
-- One particularly improved version is JSPen
-    - [JSPen](http://jspen.co)
-    - [Post](https://medium.com/swlh/creating-jspen-a-codepen-like-editor-that-stores-pages-in-urls-b163934f06c8)
-      about the creation of JSPen
-
-Similar in some ways (though unrelated) to the following projects
-- [itty.bitty.site](https://github.com/alcor/itty-bitty)
-- [TinyEditor](https://github.com/umpox/TinyEditor)
-
-
-## Project Status
-
-This project is actively maintained. If there are no recent commits, it means
-that everything has been running smoothly! URL Pages is designed to be 100%
-backwards-compatible, so your links will never break.
-
-Even if something were to happen to me, and I could not continue to work on
-the project, URL Pages will continue to work as long as my GitHub account is
-open and the [jstrieb.github.io](https://jstrieb.github.io) domain is online.
-
-
-## To-do
-
-- Improve the bookmarklet -- it's mostly unusable as of right now
-    - Fix relative vs absolute linking
-    - Maybe try embedding images
-    - Import all `src`ed scripts directly
-- Improve UI in general and editors beyond simple `textarea` (perhaps integrate
-  Ace or CodeMirror)
-- Make the buttons better/more efficient (don't update `href` on every key
-  press)
-- Figure out and publish max URL sizes for various URL shorteners
-- Implement URL compression using
-  [Brotli](https://en.wikipedia.org/wiki/Brotli) for shorter URLs
-- Add option to "publish" pages using base65536 as suggested
-  [here](https://github.com/jstrieb/urlpages/issues/5)
-- Upload examples of multi-page sites (tree hierarchy)
