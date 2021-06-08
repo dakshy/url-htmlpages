@@ -19,15 +19,6 @@ This was a fork of [jstrieb.github.io/urlpages](http://jstrieb.github.io/urlpage
 - A few hundred total lines of clear, well-documented HTML, CSS, and JavaScript
 
 
-## Encrypt
-
-It is now possible to encrypt URL Pages using Link
-Lock. This static, distributed web
-application uses AES in the browser to encrypt the URL without transmitting any
-data. The encrypted link is then stored in a Link Lock URL, which, when
-visited, can only be unlocked with a password.
-
-
 ## How it works
 
 As hinted by its name, URL Pages works by storing the entire contents of a web
@@ -57,7 +48,7 @@ JSON string before being base 64 encoded.
 
 The obvious downside of URL Pages is that the links get very long very quickly.
 Luckily, some URL shorteners are able to accommodate fairly long URLs (shoutout
-to [tinyurl.com](http://tinyurl.com)). In a strange way, this effectively means the
+to [tinyurl.com API](http://tinyurl.com)). In a strange way, this effectively means the
 link shortener is acting as the web host since it is responsible for storing
 the record of the web page's data. For simple web pages (and even simple page
 hierarchies), URL Pages have proven reasonably easy and effective to use,
